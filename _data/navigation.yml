@@ -1,9 +1,17 @@
 main:
+  - title: "About me"
+    url: /about/
   - title: "Posts"
     url: /posts/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
-  - title: "About"
-    url: /about/
+  # - title: "Pages"
+  #   url: /page-archive/
+  - title: "Blogs"
+    url: /blogs/
+  # - title: "Collections"
+  #   url: /collection-archive/
+  # - title: "External Link"
+  #   url: https://google.com
