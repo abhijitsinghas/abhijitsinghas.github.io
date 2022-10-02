@@ -30,6 +30,11 @@ search: true
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 incremental: true
+kramdown:
+  highlighter: coderay
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
 
 # Outputting
 permalink: /:categories/:title/
@@ -69,7 +74,7 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://abhijitsinghas.github.io"
+      url: "https://abhijits.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/abhijitaa05"
@@ -104,6 +109,11 @@ defaults:
       comments: true
       share: true
       related: true
+      show_date: true
+      toc: true
+      toc_label: "Content"
+      toc_icon: "list"
+      toc_sticky: true
   # _pages
   - scope:
       path: "_pages"
