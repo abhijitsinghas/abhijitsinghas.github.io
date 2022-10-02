@@ -218,7 +218,7 @@ Before trying `run` the applicaton let's comment following dependencies in our `
 <!--		</dependency>-->
 ```
 
-Now let's Run the application and test the REST endpoints. You can either use `curl` to send http request or use `Postman` or any other http request tool of you choosing. In this blod we are defining the `curl` request for testing.
+Now let's Run the application and test the REST endpoints. You can either use `curl` to send http request or use `Postman` or any other http request tool of you choosing. In this blog we are defining the `curl` request for testing.
 
 Getting familiarised with `curl` early on is benefitial as it can be used for testing/debugging REST requests inside containers/servers as well.
 {: .notice--info}
@@ -328,7 +328,7 @@ public class StudentDto {
 }
 ```
 
-* `@NotBlank` is applied on CharSequence fields and validates that the field is not null and trimmed lenght is greater than zero.
+* `@NotBlank` is applied on CharSequence fields and validates that the field is not null and trimmed length is greater than zero.
 * `@Pattern` is also applied to CharSequence fields and validates that field values match the provided regex.
 * `@NotNull` validates that the field is not null.
 * `@Min` and `@Max` are used on number fields to validate minimum and maximum allowed values.
