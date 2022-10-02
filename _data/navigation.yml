@@ -11,8 +11,8 @@ main:
     url: /tags/
   # - title: "Pages"
   #   url: /page-archive/
-  - title: "Blogs"
-    url: /blogs/
+  # - title: "Blogs"
+  #   url: /blogs/
   # - title: "Collections"
   #   url: /collection-archive/
   # - title: "External Link"
