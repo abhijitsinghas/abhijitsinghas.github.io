@@ -226,6 +226,7 @@ Getting familiarised with `curl` early on is benefitial as it can be used for te
 
 ## Create Student
 Request :
+
 `curl -v -X POST -d '{"firstName":"Varun","lastName":"Dube","age":18,"gender":"MALE","standard":10}' -H 'Content-Type: application/json' http://localhost:8080/student`
 
 Response :
@@ -243,6 +244,7 @@ Response :
 
 ## Get Student
 Request :
+
 `curl -v -X GET -H 'Accept: application/json' http://localhost:8080/student/2577edba-5ade-4783-b653-0294bc2703e2`
 
 Response :
@@ -258,6 +260,7 @@ Response :
 
 ## Update Student
 Request :
+
 `curl -v -X PATCH -d '{"firstName":"Varun","lastName":"Dube","age":40,"gender":"MALE","standard":12}' -H 'Content-Type: application/json' http://localhost:8080/student/fac201c6-353c-4c57-9349-0397df285901`
 
 Response :
@@ -273,6 +276,7 @@ Response :
 
 ## Delete Student
 Request :
+
 `curl -v -X DELETE -H 'Content-Type: application/json' http://localhost:8080/student/fac201c6-353c-4c57-9349-0397df285901 `
 
 Response :
@@ -321,8 +325,8 @@ public class StudentDto {
     private Gender gender;
 
     @NotNull(message = "'standard' should not be null.")
-    @Min(value = 1, message = "'standard' minimum valid age is 1.")
-    @Max(value = 12, message = "'standard' maximum valid age is 12.")
+    @Min(value = 1, message = "'standard' minimum valid value is 1.")
+    @Max(value = 12, message = "'standard' maximum valid value is 12.")
     private int standard;
 
 }
@@ -746,7 +750,7 @@ Update `StudentService` class to use `NotFoundException`.
 
 Now let's again try to test with Invalid POST request.
 
-` curl -v -X POST -d '{"firstName":"","lastName":"","age":18,"gender":"MALE","standard":20}' -H 'Content-Type: application/json' http://localhost:8080/student`
+`curl -v -X POST -d '{"firstName":"","lastName":"","age":18,"gender":"MALE","standard":20}' -H 'Content-Type: application/json' http://localhost:8080/student`
 
 Response is 400 Bad Request.
 
@@ -768,7 +772,7 @@ Let's `enable` stackTrace in `application.yml`
 ```
 Get request for data is not available.
 
-` curl -v -X GET -H 'Accept: application/json' http://localhost:8080/student/2577edba-5ade-4783-b653-0294bc2703e2`
+`curl -v -X GET -H 'Accept: application/json' http://localhost:8080/student/2577edba-5ade-4783-b653-0294bc2703e2`
 
 Response is a 404 Not Found with complete stackTrace.
 
