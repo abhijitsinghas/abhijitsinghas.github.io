@@ -9,8 +9,8 @@ main:
     url: /categories/
   # - title: "Tags"
   #   url: /tags/
-  - title: "CV"
-    url: /assets/AbhijitSingh.pdf
+  # - title: "CV"
+  #   url: /assets/AbhijitSingh.pdf
   # - title: "Pages"
   #   url: /page-archive/
   # - title: "Blogs"

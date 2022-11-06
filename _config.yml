@@ -72,9 +72,9 @@ author:
   bio    : "Technical Architect"
   location  : India
   links:
-    - label: "Website"
+    - label: "Resume"
       icon: "fas fa-fw fa-link"
-      url: "https://abhijits.com"
+      url: "/assets/AbhijitSingh.pdf"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/abhijitaa05"
