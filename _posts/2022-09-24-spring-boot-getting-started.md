@@ -789,4 +789,4 @@ Response is a 404 Not Found with complete stackTrace.
 
 Congratulations! now you have successfully created a SpringBoot based REST Application which is able to perform basic CRUD operations, along with basic error handling. 
 
-Complete code above tutorial could be found on [Github](https://github.com/abhijitsinghas/sb-student-service).
+Complete code for above tutorial could be found on [Github](https://github.com/abhijitsinghas/sb-student-service).
